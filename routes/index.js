@@ -2,6 +2,11 @@ ngApp.config(['$routeProvider',
 
 	function ($routeProvider) {
 
+		$routeProvider.when('/index', {
+			templateUrl: '/views/index.html',
+			controller: 'IndexCtrl'
+		});
+
 		/* $routeProvider.when('/path/:optionalParameter?', {
 			templateUrl: '/views/index.html',
 			controller: 'IndexCtrl'
